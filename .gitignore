@@ -4,3 +4,4 @@ dist
 package-lock.json
 dist-ssr
 *.local
+CV.pdf
