@@ -11,16 +11,17 @@ import {
 } from '@chakra-ui/react';
 import emailjs from 'emailjs-com';
 import Title from '../Title';
+import { SERVICE, TEMPLATE, USER } from '../../helpers/privateKeys';
 
 export default function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
       .sendForm(
-        'service_un2qk2s',
-        'template_0co3flf',
+        `service_${SERVICE}`,
+        `template_${TEMPLATE}`,
         e.target,
-        'user_0BQv9KFMLFKuvCBz1WpFJ'
+        `user_${USER}`
       )
       .then(
         (result) => {
