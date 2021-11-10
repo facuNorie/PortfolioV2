@@ -4,19 +4,23 @@ import mainPicture from '../../assets/mainPicture.png';
 
 export default function Main() {
   return (
-    <Box>
+    <main style={{ marginTop: '100px' }}>
       <Flex px={5} direction={['column', 'column', 'row', 'row']}>
-        <Box w='100%' h='80vh'>
+        <Box w='100%'>
           <Box display='flex' flexDir='column' h='100%' justifyContent='center'>
             <Text
-              fontSize='6xl' /* Quiza 7xl */
+              fontSize='7xl' /* Quiza 6xl */
               fontWeight='900'
-              textAlign='center'
+              textAlign='end'
             >
               Frontend Developer
             </Text>
-            <Text fontSize='6xl' fontWeight='900' textAlign='center'>
+            <Text fontSize='6xl' fontWeight='900' textAlign='end'>
               Facu Noriega
+            </Text>
+            <Text fontSize='1xl' textAlign='end' fontWeight='500'>
+              <i className='bx bxs-map' style={{ marginRight: '5px' }}></i>
+              Buenos Aires, Argentina
             </Text>
           </Box>
         </Box>
@@ -34,6 +38,6 @@ export default function Main() {
           />
         </Box>
       </Flex>
-    </Box>
+    </main>
   );
 }
