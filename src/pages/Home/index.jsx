@@ -1,11 +1,18 @@
-import { Text } from '@chakra-ui/react';
 import React from 'react';
+import About from '../../components/About';
+import Contact from '../../components/Contact';
 import Main from '../../components/Main';
+import Projects from '../../components/Projects';
+import Skills from '../../components/Skills';
 
 export default function Home() {
   return (
-    <main>
+    <>
       <Main />
-    </main>
+      <About />
+      <Projects />
+      <Skills />
+      <Contact />
+    </>
   );
 }
