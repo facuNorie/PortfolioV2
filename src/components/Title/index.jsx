@@ -11,7 +11,7 @@ export default function Title({ title, colorA, colorB }) {
       bgClip='text'
       style={{
         borderBottom: '3px solid',
-        borderImage: `linear-gradient(to right, ${colorA}, ${colorB}, transparent,transparent,transparent) 1`,
+        borderImage: `linear-gradient(to right, ${colorA}, ${colorB}, transparent,transparent) 1`,
       }}
     >
       {title}

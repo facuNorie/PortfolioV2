@@ -4,16 +4,16 @@ import mainPicture from '../../assets/mainPicture.png';
 
 export default function Main() {
   return (
-    <main style={{ marginTop: '100px' }}>
+    <main id='home' style={{ paddingTop: '160px' }}>
       <Flex px={5} direction={['column', 'column', 'row', 'row']}>
         <Box w='100%'>
           <Box display='flex' flexDir='column' h='100%' justifyContent='center'>
             <Text
-              fontSize='7xl' /* Quiza 6xl */
+              fontSize='6xl' /* Quiza 7xl */
               fontWeight='900'
               textAlign='end'
             >
-              Frontend Developer
+              Desarrollador Frontend
             </Text>
             <Text fontSize='6xl' fontWeight='900' textAlign='end'>
               Facu Noriega

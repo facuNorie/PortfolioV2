@@ -39,18 +39,14 @@ const icons = [
     icon: 'bx bxl-bootstrap',
     title: 'Bootstrap',
   },
-  {
-    icon: 'bx bxs-terminal',
-    title: 'Terminal',
-  },
 ];
 
 export default function Skills() {
   const { colorMode } = useColorMode();
   return (
-    <article id='skills ' style={{ marginTop: '200px' }}>
+    <article id='skills' style={{ paddingTop: '200px' }}>
       <Box textAlign='center' mb={20}>
-        <Title title='Skills' colorA='#fc00ff' colorB='#00dbde' />
+        <Title title='Tecnologías' colorA='#fc00ff' colorB='#00dbde' />
       </Box>
       <Flex wrap='wrap' justify='center'>
         {icons.map((item) => {

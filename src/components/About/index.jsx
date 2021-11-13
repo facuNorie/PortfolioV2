@@ -6,9 +6,9 @@ import Title from '../Title';
 
 export default function About() {
   return (
-    <article id='about' style={{ marginTop: '200px' }}>
+    <article id='about' style={{ paddingTop: '200px' }}>
       <Box textAlign='center'>
-        <Title title='About' colorA='#cc2b5e' colorB='#753a88' />
+        <Title title='Sobre mí' colorA='#cc2b5e' colorB='#753a88' />
       </Box>
       <Flex
         mt={20}
