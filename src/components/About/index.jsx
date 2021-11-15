@@ -15,16 +15,22 @@ export default function About() {
         direction={['column', 'column', 'row', 'row']}
         h={{ base: 'auto', md: '300' }}
       >
-        <Box w='100%' px={10} textAlign='end'>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis,
-          officiis iure. Vero magnam ipsum facilis fugit odio assumenda atque
-          mollitia. Repudiandae nobis placeat quis iste, esse expedita ullam non
-          incidunt. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          Ducimus vero deserunt autem, dicta non distinctio hic aspernatur illum
-          iste praesentium temporibus deleniti corr Lorem ipsum dolor sit, amet
-          consectetur adipisicing elit. Accusamus, aut accusantium eligendi
-          voluptas corrupti dolor sequi ipsa dignissimos animi quibusdam
-          voluptatibus in voluptatem omnis optio culpa? Ab dolor mollitia omnis!
+        <Box w='100%' px={10}>
+          <Text fontSize='1.1rem' lineHeight='2rem'>
+            Hola! Me llamo Facundo Leonel Noriega Barros, tengo 18 años y vivo
+            en la provincia de Buenos Aires, Argentina &#x1f1e6;&#x1f1f7;.
+            <br />
+            Soy Técnico informático, y actualmente me encuentro estudiando el
+            primer año de la carrera "Licenciatura en sistemas de la
+            información".
+            <br />
+            Hace casi 2 años comencé a estudiar sobre el mundo de la
+            programación por mi cuenta y poco a poco he ido adquiriendo diversas
+            habilidades y desarrollado distintos proyectos como para hoy en dia
+            considerarme Desarrollador frontend, así y todo el mundo IT se
+            renueva constantemente y es por ello que sigo en constante
+            aprendizaje de tecnologías.
+          </Text>
         </Box>
         <Box
           w='100%'
