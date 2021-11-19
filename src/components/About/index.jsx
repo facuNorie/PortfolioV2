@@ -27,9 +27,9 @@ export default function About() {
             Hace casi 2 años comencé a estudiar sobre el mundo de la
             programación por mi cuenta y poco a poco he ido adquiriendo diversas
             habilidades y desarrollado distintos proyectos como para hoy en dia
-            considerarme Desarrollador frontend, así y todo el mundo IT se
+            considerarme desarrollador frontend, así y todo el mundo IT se
             renueva constantemente y es por ello que sigo en constante
-            aprendizaje de tecnologías.
+            aprendizaje.
           </Text>
         </Box>
         <Box

@@ -5,10 +5,9 @@ export default function Cv() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div style={{ position: 'absolute', width: '100%' }}>
+    <div>
       <div
         style={{
-          height: '100%',
           display: 'flex',
           justifyContent: 'center',
           paddingTop: '5rem',
