@@ -9,13 +9,17 @@ export default function Main() {
         <Box w='100%'>
           <Box display='flex' flexDir='column' h='100%' justifyContent='center'>
             <Text
-              fontSize='6xl' /* Quiza 7xl */
+              fontSize={{ base: '5xl', md: '6xl' }}
               fontWeight='900'
               textAlign='end'
             >
               Desarrollador Frontend
             </Text>
-            <Text fontSize='6xl' fontWeight='900' textAlign='end'>
+            <Text
+              fontSize={{ base: '4xl', md: '5xl' }}
+              fontWeight='900'
+              textAlign='end'
+            >
               Facu Noriega
             </Text>
             <Text fontSize='1xl' textAlign='end' fontWeight='500'>
@@ -25,13 +29,14 @@ export default function Main() {
           </Box>
         </Box>
         <Box
+          marginTop={{ base: '50px', md: '0' }}
           display='flex'
           justifyContent='center'
           alignItems='center'
           w='100%'
         >
           <Image
-            boxSize='350px'
+            boxSize={{ base: '300px', md: '350px' }}
             objectFit='cover'
             src={mainPicture}
             alt='Developer illustration'
