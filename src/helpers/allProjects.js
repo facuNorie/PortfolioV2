@@ -13,9 +13,7 @@ const allProjects = [
       repo: 'https://github.com/facuNorie/SuperHero-Alkemy',
     },
     date: '14 Ago 2021',
-    icons: `           <i className='bx bxl-react'></i>
-    <i className='bx bxl-redux'></i>
-    <i className='bx bxl-bootstrap'></i>`,
+    icons: ['react', 'redux', 'bootstrap'],
   },
   {
     id: 2,
@@ -28,6 +26,7 @@ const allProjects = [
     },
     date: '28 Abr 2021',
     order: true,
+    icons: ['react', 'firebase'],
   },
   {
     id: 3,
@@ -40,6 +39,7 @@ const allProjects = [
       demo: 'https://facunorie.github.io/Todo-App/',
     },
     date: '30 Mar 2021',
+    icons: ['react'],
   },
 ];
 

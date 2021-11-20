@@ -12,7 +12,7 @@ export default function Projects() {
       </Box>
       <Box px={{ base: '10', md: '20' }} mt={20}>
         {allProjects?.map(
-          ({ id, title, image, date, description, order, link }) => {
+          ({ id, title, image, date, description, order, link, icons }) => {
             return (
               <Card
                 key={id}
@@ -22,6 +22,7 @@ export default function Projects() {
                 description={description}
                 order={order}
                 link={link}
+                icons={icons}
               />
             );
           }
