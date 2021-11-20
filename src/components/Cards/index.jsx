@@ -1,13 +1,24 @@
 import React from 'react';
-import { Box, Text, Button, useColorMode, Flex, Link } from '@chakra-ui/react';
+import { Box, Text, Flex, Link, Image } from '@chakra-ui/react';
 
-export default function Card({ title, date, image, description, order, link }) {
-  const { colorMode } = useColorMode();
-  let bgCard = colorMode === 'dark' ? 'black' : 'white';
+export default function Card({
+  title,
+  date,
+  image,
+  description,
+  order,
+  link,
+  icons,
+}) {
   return (
-    <Flex w='100%' my={7} h='60vh'>
+    <Flex
+      w='100%'
+      my={7}
+      h={{ base: 'auto', md: '60vh' }}
+      direction={{ base: 'column', md: 'row' }}
+    >
       <Box
-        w='50%'
+        w={{ base: '100%', md: '50%' }}
         display='flex'
         flexDirection='column'
         justifyContent='space-around'
@@ -18,7 +29,9 @@ export default function Card({ title, date, image, description, order, link }) {
           <Text fontSize='3xl' textAlign='center'>
             {title}
           </Text>
-          <Text px={10}>{description}</Text>
+          <Text px={10} textAlign='center'>
+            {description}
+          </Text>
         </Box>
 
         <Box>
@@ -29,7 +42,7 @@ export default function Card({ title, date, image, description, order, link }) {
               href={link.demo}
               color='white'
               isExternal
-              bgGradient='linear(to-r,#f0488e,#5D26C1)'
+              bgGradient='linear(to-r,#B24592,#F15F79)'
               px={2}
               py={1}
               mx={2}
@@ -46,7 +59,7 @@ export default function Card({ title, date, image, description, order, link }) {
             href={link.repo}
             color='white'
             isExternal
-            bgGradient='linear(to-r,#f0488e,#5D26C1)'
+            bgGradient='linear(to-r,#B24592,#F15F79)'
             px={2}
             py={1}
             mx={2}
@@ -60,26 +73,36 @@ export default function Card({ title, date, image, description, order, link }) {
           </Link>
         </Box>
         <Box>
-          <Text fontWeight='500'>Built with</Text>
+          <Text fontWeight='500'>Tecnologías</Text>
           <div style={{ textAlign: 'center' }}>
-            <i className='bx bxl-react'></i>
-            <i className='bx bxl-firebase'></i>
+            {icons.map((icon) => {
+              return (
+                <i
+                  className={`bx bxl-${icon}`}
+                  key={icon}
+                  style={{ fontSize: '1.3rem' }}
+                ></i>
+              );
+            })}
           </div>
         </Box>
       </Box>
       <Box
-        w='50%'
+        w={{ base: '100%', md: '50%' }}
         bgGradient='linear(to-r,#B24592,#F15F79)'
-        order={order ? '-1' : '1'}
+        order={{ base: '-1', md: order ? '-1' : '1' }}
       >
         <Text
-          textAlign={order ? 'start' : 'end'}
+          textAlign={{ base: 'end', md: order ? 'start' : 'end' }}
           fontWeight='500'
           color='white'
           p={3}
         >
           {date}
         </Text>
+        <Box display='flex' h='80%' alignItems='center' justifyContent='center'>
+          <Image src={image} alt={title} h='160' />
+        </Box>
       </Box>
     </Flex>
   );
