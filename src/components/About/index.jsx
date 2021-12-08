@@ -1,8 +1,8 @@
-import React from 'react';
-import { Box, Text, Flex, Image } from '@chakra-ui/react';
-import profilePicture from '../../assets/profilePicture.png';
-import { Link } from 'react-router-dom';
-import Title from '../Title';
+import React from 'react'
+import { Box, Text, Flex, Image } from '@chakra-ui/react'
+import profilePicture from '../../assets/profilePicture.png'
+import { Link } from 'react-router-dom'
+import Title from '../Title'
 
 export default function About() {
   return (
@@ -20,9 +20,8 @@ export default function About() {
             Hola! Me llamo Facundo Leonel Noriega Barros, tengo 18 años y vivo
             en la provincia de Buenos Aires, Argentina &#x1f1e6;&#x1f1f7;.
             <br />
-            Soy Técnico informático, y actualmente me encuentro estudiando el
-            primer año de la carrera "Licenciatura en sistemas de la
-            información".
+            Soy Técnico informático, y en 2022 comenzaré el primer año de la
+            carrera "Licenciatura en sistemas de la información".
             <br />
             Hace casi 2 años comencé a estudiar sobre el mundo de la
             programación por mi cuenta y poco a poco he ido adquiriendo diversas
@@ -57,7 +56,12 @@ export default function About() {
             />
           </Box>
           <Box>
-            <Link to='/cv' style={{ margin: ' 1rem' }}>
+            <Link
+              to='/cv'
+              style={{
+                margin: ' 1rem',
+              }}
+            >
               <i className='bx bxs-file-pdf' style={{ fontSize: '2rem' }}></i>
             </Link>
             <a
@@ -78,15 +82,22 @@ export default function About() {
               ></i>
             </a>
             <a
-              href='https://www.instagram.com/facunorie/'
+              href='https://www.instagram.com/noriedev/'
               target='_blank'
               style={{ margin: ' 1rem' }}
             >
               <i className='bx bxl-instagram' style={{ fontSize: '2rem' }}></i>
             </a>
+            <a
+              href='https://twitter.com/noriedev'
+              target='_blank'
+              style={{ margin: ' 1rem' }}
+            >
+              <i className='bx bxl-twitter' style={{ fontSize: '2rem' }}></i>
+            </a>
           </Box>
         </Box>
       </Flex>
     </article>
-  );
+  )
 }
