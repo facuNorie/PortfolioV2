@@ -1,6 +1,6 @@
-import imageTodolist from '../assets/projectTodolist.png';
-import imageContactbook from '../assets/projectContactbook.png';
-import imageSuperhero from '../assets/projectSuperhero.png';
+import imageTodolist from '../assets/projectTodolist.png'
+import imageContactbook from '../assets/projectContactbook.png'
+import imageSuperhero from '../assets/projectSuperhero.png'
 
 const allProjects = [
   {
@@ -11,6 +11,7 @@ const allProjects = [
       'Web donde podemos buscar entre más de 300 héroes y crear nuestro propio equipo 100% personalizado!. Una vez creado el equipo podremos ver las estadísticas no solo de cada uno de los héroes sino que también del equipo completo.',
     link: {
       repo: 'https://github.com/facuNorie/SuperHero-Alkemy',
+      demo: 'https://deploy-superhero.vercel.app/',
     },
     date: '14 Ago 2021',
     icons: ['react', 'redux', 'bootstrap'],
@@ -23,6 +24,7 @@ const allProjects = [
       'Aplicación web que simula ser la típica herramienta que almacena y gestiona nuestros contactos. Aquí podremos establecer nuestro usuario y contraseña para luego poder crear los respectivos contactos. Tanto el registro, como los contactos se almacenan en una base de datos.',
     link: {
       repo: 'https://github.com/facuNorie/Agenda-de-contactos',
+      demo: 'https://fb-firestore-9a351.web.app/',
     },
     date: '28 Abr 2021',
     order: true,
@@ -41,6 +43,6 @@ const allProjects = [
     date: '30 Mar 2021',
     icons: ['react'],
   },
-];
+]
 
-export default allProjects;
+export default allProjects
