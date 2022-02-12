@@ -15,13 +15,13 @@ export default function About() {
         direction={['column', 'column', 'row', 'row']}
         h={{ base: 'auto', md: '300' }}
       >
-        <Box w='100%' px={10}>
+        <Box w='100%' pr={8} pl={14}>
           <Text fontSize='1.1rem' lineHeight='2rem'>
             Hola! Me llamo Facundo Leonel Noriega Barros, tengo 18 años y vivo
             en la provincia de Buenos Aires, Argentina &#x1f1e6;&#x1f1f7;.
             <br />
-            Soy Técnico informático, y en 2022 comenzaré el primer año de la
-            carrera "Licenciatura en sistemas de la información".
+            Soy Técnico informático, este año curso el primer año de la carrera
+            "Licenciatura en sistemas de la información".
             <br />
             Hace casi 2 años comencé a estudiar sobre el mundo de la
             programación por mi cuenta y poco a poco he ido adquiriendo diversas
@@ -80,13 +80,6 @@ export default function About() {
                 className='bx bxl-linkedin-square'
                 style={{ fontSize: '2rem' }}
               ></i>
-            </a>
-            <a
-              href='https://www.instagram.com/noriedev/'
-              target='_blank'
-              style={{ margin: ' 1rem' }}
-            >
-              <i className='bx bxl-instagram' style={{ fontSize: '2rem' }}></i>
             </a>
             <a
               href='https://twitter.com/noriedev'
