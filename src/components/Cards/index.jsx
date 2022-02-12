@@ -1,5 +1,5 @@
-import React from 'react';
-import { Box, Text, Flex, Link, Image } from '@chakra-ui/react';
+import React from 'react'
+import { Box, Text, Flex, Link, Image } from '@chakra-ui/react'
 
 export default function Card({
   title,
@@ -52,7 +52,7 @@ export default function Card({
                 textDecoration: 'none',
               }}
             >
-              Demo
+              Visitar
             </Link>
           )}
           <Link
@@ -69,7 +69,7 @@ export default function Card({
               textDecoration: 'none',
             }}
           >
-            Repo
+            Código
           </Link>
         </Box>
         <Box>
@@ -82,7 +82,7 @@ export default function Card({
                   key={icon}
                   style={{ fontSize: '1.3rem' }}
                 ></i>
-              );
+              )
             })}
           </div>
         </Box>
@@ -105,5 +105,5 @@ export default function Card({
         </Box>
       </Box>
     </Flex>
-  );
+  )
 }
