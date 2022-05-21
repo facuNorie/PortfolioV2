@@ -1,0 +1,26 @@
+.animatedTitle {
+  position: relative;
+}
+
+.animatedTitle::before {
+  background: linear-gradient(90deg, var(--startColor), var(--endColor));
+  content: var(--content);
+  position: absolute;
+  inset: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animated 9s infinite;
+  animation-delay: var(--delay);
+}
+
+@keyframes animated {
+  0%,
+  16.667%,
+  100% {
+    opacity: 1;
+  }
+  33.333%,
+  83.333% {
+    opacity: 0;
+  }
+}
