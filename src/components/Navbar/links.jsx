@@ -1,20 +1,14 @@
-import React from 'react';
-import { Link } from '@chakra-ui/react';
+import React from 'react'
+import { Link } from '@chakra-ui/react'
 
 export default function Links({ drawer }) {
   return (
     <>
-      <Link
-        ml={!drawer && '10px'}
-        href='/#home'
-        py={drawer && 2}
-        my={drawer && 4}
-        fontSize='1.1rem'
-      >
+      <Link href='/#home' py={drawer && 2} my={drawer && 4} fontSize='1.1rem'>
         Inicio
       </Link>
       <Link
-        ml={!drawer && '10px'}
+        ml={!drawer && '20px'}
         href='/#about'
         py={drawer && 2}
         my={drawer && 4}
@@ -23,7 +17,7 @@ export default function Links({ drawer }) {
         Sobre mí
       </Link>
       <Link
-        ml={!drawer && '10px'}
+        ml={!drawer && '20px'}
         href='/#projects'
         py={drawer && 2}
         my={drawer && 4}
@@ -32,7 +26,7 @@ export default function Links({ drawer }) {
         Portfolio
       </Link>
       <Link
-        ml={!drawer && '10px'}
+        ml={!drawer && '20px'}
         href='/#skills'
         py={drawer && 2}
         my={drawer && 4}
@@ -41,7 +35,7 @@ export default function Links({ drawer }) {
         Tecnologías
       </Link>
       <Link
-        ml={!drawer && '10px'}
+        ml={!drawer && '20px'}
         href='/#contact'
         py={drawer && 2}
         my={drawer && 4}
@@ -50,5 +44,5 @@ export default function Links({ drawer }) {
         Contacto
       </Link>
     </>
-  );
+  )
 }
