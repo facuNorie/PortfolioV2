@@ -17,18 +17,17 @@ export default function About() {
       >
         <Box w='100%' pr={8} pl={14}>
           <Text fontSize='1.1rem' lineHeight='2rem'>
-            Hola! Me llamo Facundo Leonel Noriega Barros, tengo 18 años y vivo
+            Hola! Me llamo Facundo Leonel Noriega Barros, tengo 19 años y vivo
             en la provincia de Buenos Aires, Argentina &#x1f1e6;&#x1f1f7;.
             <br />
-            Soy Técnico informático, este año curso el primer año de la carrera
-            "Licenciatura en sistemas de la información".
+            Soy Técnico informático, este 2022 me encuentro cursando el primer
+            año de la carrera "Licenciatura en sistemas de la información".
             <br />
-            Hace casi 2 años comencé a estudiar sobre el mundo de la
-            programación por mi cuenta y poco a poco he ido adquiriendo diversas
-            habilidades y desarrollado distintos proyectos como para hoy en dia
-            considerarme desarrollador frontend, así y todo el mundo IT se
-            renueva constantemente y es por ello que sigo en constante
-            aprendizaje.
+            Hace 2 años comencé a estudiar sobre el mundo de la programación por
+            mi cuenta y poco a poco he ido adquiriendo diversas habilidades y
+            desarrollado distintos proyectos como para hoy en dia considerarme
+            desarrollador frontend, así y todo el mundo IT se renueva
+            constantemente y es por ello que sigo en constante aprendizaje.
           </Text>
         </Box>
         <Box
